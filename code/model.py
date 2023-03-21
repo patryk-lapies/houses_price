@@ -20,4 +20,5 @@ class Model:
 
     @staticmethod
     def evaluate(true_values: pd.Series, predictions: np.array) -> float:
+        """Evaluating predictions using logarithmic mean squared error"""
         return log_mse(true_values, predictions)
